@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="diseño web, desarrollo web, portafolio creativo, currículum en línea, tarjeta de presentación, blog profesional, diseño responsive, temas CV, portafolio personal, temática creativa, sitio web profesional" />
+    <meta name="description"
+        content="Visita mi portafolio web y descubre sobre mi">
+    <meta name="robots" content="INDEX, FOLLOW" />
+    <meta name="author" content="Luciano Renzo" />
+    <title>Luciano Renzo | Diseño Web & Desarrollo</title>
+    <link rel="icon" type="image/png" href="images/L.svg">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const myForm = document.getElementById("myForm");
+            const successMessage = document.getElementById("successMessage");
+
+            myForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Evita el envío predeterminado del formulario
+
+                // Oculta el formulario
+                myForm.style.display = "none";
+
+                // Muestra el mensaje de éxito
+                successMessage.style.display = "block";
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="all">
+        <!--CURSOR PARA-->
+        <div class="cursor"></div>
+        <!-- CONTIENE UN ELEMENTO -->
+        <div id="loader">
+            <span class="color">Bienvenido</span>Welcome
+        </div>
+        <!-- ESTE ELEMENTO ES UN DIVISOR PARA SEPARAR DOS SECCIONES DEL CONTENIDO DE LA PAGINA -->
+        <div id="breaker"></div>
+        
+        <div id="navigation-content">
+            <!-- LOGO A LA IZQUIERDA -->
+            <a href="index.html">
+            <div class="logo">
+                <img src="images/L.svg" alt="Logo de Renzo S">
+            </div>
+            </a>
+            <!-- BOTON PARA CERRAR -->
+            <div class="navigation-close">
+                <span class="close-first"></span>
+                <span class="close-second"></span>
+            </div>
+            <!-- LINKS PARA NAVEGAR -->
+            <div class="navigation-links">
+                <a href="#" data-text="Explora" id="home-link">INICIO</a>
+                <a href="#" data-text="Descubre más sobre mí" id="about-link">SOBRE MÍ</a>
+                
+                <a href="#" data-text="Sobre mis trabajos" id="portfolio-link">PORTAFOLIO</a>
+                <a href="#" data-text="Enviame un mensaje" id="contact-link">CONTACTO</a>
+            </div>
+        </div>
+        <!-- EL INICIO HOME-PAGE -->
+        <div id="navigation-bar">
+            <div class="menubar">
+                <span class="first-span"></span>
+                <span class="second-span"></span>
+                <span class="third-span"></span>
+            </div>
+        </div>
+        <!-- FIN -->
+        <!-- HEADER -->
+        <div id="header">
+            <!-- EFECTOS DE PARTICULAS DE FONDO -->
+            <div id="particles"></div>
+            <!-- REDES SOCIALES LINKS-->
+            <div class="social-media-links">
+                <a href="https://wa.me/960287263"><img src="images/whatsapp.png" class="social-media" alt="whatsapp-logo"></a>
+                <a href="https://www.instagram.com/luciano22q/"><img src="images/instagram.png" class="social-media" alt="instagram-logo"></a>
+                <a href="https://github.com/LUCIANO131231"><img src="images/github.png" class="social-media" alt="github-logo"></a>
+                <a href="Mailto:lucianorenzo487@gmail.com"><img src="images/email.png" alt="email-pic" class="social-media"></a>
+                <a href="Tel:960287263"><img src="images/llamada.png" alt="phone-pic" class="social-media"></a>
+                <a href="https://www.facebook.com/renzo.luciano.773/"><img src="images/facebook.png" class="social-media" alt="facebook-logo"></a>
+                <a href="https://www.linkedin.com/in/renzo-luciano-218955251"><img src="images/linkedin.png" class="social-media" alt="linkedin-logo"></a>
+            </div>
+            <!--FIN-->
+            <div class="header-content">
+                <div class="header-content-box">
+                    <div class="subfirstline"><span class="color">Diseño y Desarrollo </span>Web</div>
+                    <div class="secondline">
+                        Soy
+                        <span class="txt-rotate color" data-period="1200"
+                            data-rotate='[ "Desarrollador Web y Diseñador Creativo." ]'></span>
+                        <span class="slash">|</span>
+                    </div><br><br><br><br>
+                </div>
+            </div>
+            <!-- LOGO L-->
+            <div class="header-image">
+                <img src="images/L.svg" alt="logo">
+            </div>
+            <!-- LOGO L FIN -->
+        </div>
+        <!-- HEADER FIN-->
+
+        <!-- PALETA DE COLORES -->
+        <div id="about">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="images/gear.png">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Cambia el color</div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about-content">
+                <div class="about-header">Luciano 
+                    <span class="color">Renzo Paolo</span>
+                    <span class="header-caption">Conóceme<span class="color"></span></span>
+                </div>
+                <div class="about-main">
+                    <div class="about-first-paragraph wow">
+                        <!--about description-->
+                        <span class="about-first-line">
+                            Tecnología web con un toque creativo: 
+                            <span class="color"> Diseño web atractivo y funcional.</span></span>
+                        <br>
+                        <span class="about-second-line"> ¡Hola! Soy Luciano Renzo Paolo,
+                            Estudiante de Ingeniería de Sistemas e Informática en la Universidad de Huánuco con pasión por la creación de interfaces web intuitivas y atractivas.
+                             <br><br>Cuento con sólidos conocimientos y habilidades en el desarrollo frontend. Mi enfoque se centra en la creación de experiencias de usuario atractivas y funcionales mediante el uso de tecnologías como HTML, CSS y JavaScript.
+                             Aunque mi experiencia laboral es limitada, he estado trabajando en proyectos personales y académicos que han fortalecido mis habilidades en el diseño y desarrollo frontend. Mi objetivo es seguir aprendiendo y creciendo en este campo.
+                            <br><br>
+                            Si bien mi especialidad actual se encuentra en el desarrollo frontend, estoy entusiasmado por explorar nuevas áreas, incluido el desarrollo backend. Estoy abierto a oportunidades para expandir mis conocimientos y colaborar en proyectos innovadores.</span>
+                        <div class="cv">
+                            <a href="images/RENZOCV.png" download><button>Descarga mi <span class="colors">CV</span></button></a>
+                        </div>
+                    </div>
+                    <!-- CURRICULUM VITAE PARA DESCARGAR -->
+                    <div class="about-img">
+                        <img src="images/progra.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- PALETA DE COLORES -->
+            <div id="services">
+                <div class="color-changer">
+                    <div class="color-panel">
+                        <img src="images/gear.png" alt="">
+                    </div>
+                    <div class="color-selector">
+                        <div class="heading">Cambia el color</div>
+                        <div class="colors">
+                            <ul>
+                                <li>
+                                    <a href="#0" class="color-red " title="color-red"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-purple" title="color-purple"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-malt" title="color-malt"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-green" title="color-green"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-blue" title="color-blue"></a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="color-orange" title="color-orange"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="skills">
+                <div class="skills-header">
+                    MIS <span class="color"> HABILIDADES</span>
+                </div>
+                <div class="skills-content " style="text-align: center;">
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">HTML/CSS/JS</div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="html-progress wow">85%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">Python</div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="js-progress wow">65%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">Diseño y gestión de base de datos</div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="adobe-progress wow">70%</div>
+                        </div>
+                    </div>
+                    <div class="skill-html skill">
+                        <div class="skill-text">
+                            <div class="html">Android (Java)</div>
+                        </div>
+                        <div class="html-prog wow prog">
+                            <div class="php-progress wow">65%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- COPYTGHT -->
+            <div class="footer">
+                <div class="footer-text">
+                    <p>&copy; 2024 LUCIANO RENZO PAOLO. Todos los derechos reservados.</p>
+                </div>
+            </div>
+            <!-- COPYRIGHT -->
+        </div>
+
+        <div id="portfolio">
+            <div class="color-changer">
+                <div class="color-panel">
+                    <img src="images/gear.png" alt="">
+                </div>
+                <div class="color-selector">
+                    <div class="heading">Custom Colors</div>
+                    <div class="colors">
+                        <ul>
+                            <li>
+                                <a href="#0" class="color-red " title="color-red"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-purple" title="color-purple"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-malt" title="color-malt"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-green" title="color-green"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-blue" title="color-blue"></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="color-orange" title="color-orange"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-header"> <span class="color"> MI </span> PORTAFOLIO
+                <span class="header-caption"> SOBRE MIS <span class="color"> TRABAJOS</span></span>
+            </div>
+            <div id="portfolio-content">
+                <div class="portfolio portfolio-first">
+                    <div class="portfolio-image">
+                        <img src="images/deli.png" alt="aplicaciones-moviles">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Proyecto Gestión de reparto</h2>
+                        <p>Alcance: El proyecto está diseñado para proporcionar la administración y control del servicio de entrega al cliente, esto permitirá minimizar los riesgos y falencias en el servicio de delivery.</p>
+                        <div class="button"><a
+                                href="https://trello.com/b/3Tupsl4v/proyecto-de-gestion-de-reparto"><button><span class="index">Ver<i class="gg-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio portfolio-second">
+                    <div class="portfolio-image">
+                        <img src="images/APPP.jpg" alt="paginas-web">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Proyecto Aplicación móvil</h2>
+                        <p>El objetivo principal del proyecto es brindar a los estudiantes universitarios una herramienta que les permita administrar de proyectos en equipo. La
+                            aplicación se considera una herramienta esencial para los estudiantes universitarios que participan en proyectos grupales y desean contar con una
+                            plataforma que les permita coordinar, colaborar y realizar un seguimiento efectivo de sus actividades académicas conjuntas.</p>
+                        <div class="button"><a
+                                href="https://github.com/LUCIANO131231/AppMovil"><button><span class="index">Ver<i class="gg-arrow-right"></i></span></button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio portfolio-third">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio-third.jpg" alt="creación-de-marca">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Diseño Gráfico</h2>
+                        <p>En el universo del diseño gráfico, entendemos el poder de una imagen. Contamos con las herramientas necesarias 
+                            para dar vida a tus ideas mediante diseños frescos y llamativos. Desde la creación de marcas hasta la promoción, 
+                            estamos aquí para optimizar tu presencia en línea y dejar una impresión duradera en tu audiencia.</p>
+                        <div class="button"><a
+                                href="#"><!--<button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button>--></a>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="portfolio portfolio-fourth">
+                    <div class=" portfolio-image">
+                        <img src="images/portfolio-fourth.jpg" alt="portfolio-fourth">
+                    </div>
+                    <div class="portfolio-text">
+                        <h2>Wow Graphics</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
+                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
+                    </div>
+                </div>-->
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <p>&copy; 2024 LUCIANO RENZO PAOLO. Todos los derechos reservados.</p>
+                </div>
+            </div>
+            <!--copyright-section-->
+        </div>
+        <!--portfolio end-->
+        <!--blog end-->
+        <!--contact-->
+        <div id="contact">
+            <div class="color-changer">
+                <div class="color-panel">
+                <img src="images/gear.png" alt="">
+            </div>
+            <div class="color-selector">
+                <div class="heading">Cambia el color</div>
+                <div class="colors">
+                    <ul >
+                    <li>
+                        <a href="#0" class="color-red " title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+
+            <div class="contact-header"><span class="color">CONTÁCTAME</span>
+                <div class="contact-header-caption"> <span class="color">PONTE</span> EN CONTACTO</div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <div class="form-header">
+                        Escríbeme
+                    </div>
+                    <form id="myForm" name="contact" method="POST" data-netlify="true">
+                        <div class="input-line">
+                            <input type="text" placeholder="Nombre" name="name" class="input-name" required>
+                            <input type="email" placeholder="Email" name="email" class="input-name" required>
+                        </div>
+                        <textarea placeholder="Mensaje" name="message" class="input-textarea" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <p id="successMessage" class="success-message">Se ha enviado correctamente.</p>
+                </div>                
+                <!--Contact information-->
+                <div class="contact-info">
+                    <div class="contact-info-header">
+                        INFORMACIÓN DE CONTACTO
+                    </div>
+                    <div class="contact-info-content">
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-name.png" class="icon" alt="sebastian-florez-telefono">
+                            <div class="contact-info-icon-text">
+                                <h6>Nombre y Apellidos:</h6>
+                                <p>RENZO PAOLO, LUCIANO ESTELA</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-location.png" class="icon" alt="direccion-paginas-web">
+                            <div class="contact-info-icon-text">
+                                <h6>Dirección:</h6>
+                                <p>Urbanización Maria Luisa Mz-C Lt-4, Amarilis</p>
+                            </div>
+                        </div>
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-phone.png" class="icon" alt="sebastian-florez-telefono">
+                            <div class="contact-info-icon-text">
+                                <h6>Celular:</h6>
+                                <p>960287263</p>
+                            </div>
+                        </div>
+
+                        <div class="contect-info-content-line">
+                            <img src="./images/icon-email.png" class="icon" alt="email-paginas-web">
+                            <div class="contact-info-icon-text">
+                                <h6>Correo Electrónico:</h6>
+                                <p>lucianorenzo487@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Contact information end-->
+                </div>
+            </div>
+            <!--copyright-section You Can Remove After Downloading-->
+            <div class="footer">
+                <div class="footer-text">
+                    <p>&copy; 2024 LUCIANO RENZO PAOLO. Todos los derechos reservados.</p>
+                </div>
+            </div>
+            <!--copyright-section-->
+        </div>
+        <!--contact end-->
+    </div>
+    <!--all the divisions-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/index.js"></script>
+    <!--particles script-->
+    <script>
+        particlesJS("particles", { "particles": { "number": { "value": 40, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+    </script>
+</body>
+</html>
