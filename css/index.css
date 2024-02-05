@@ -860,7 +860,7 @@ padding-bottom: 40px;
     font-family: poppins;
     font-weight: 200;
     padding: 20px;
-    color: #c70039;
+    color: #34495E;
     transition: all .4s ease;
 }
 .portfolio-text p{
@@ -877,11 +877,11 @@ padding-bottom: 40px;
     font-weight: 200;
     padding: 10px 20px;
     background:transparent;
-    color:#c70039;
+    color:#ffffff;
     transition: all .4s ease;
     outline: none;
     margin: 20px;
-    border: 1.5px solid #c70039;
+    border: 1.5px solid #34495E;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -896,7 +896,7 @@ padding-bottom: 40px;
     top: 0;
     left: 0;
     z-index: 3;
-    background: #c70039;
+    background: #34495E;
     transition: all .7s ease;
 }
 .portfolio-text button:hover{

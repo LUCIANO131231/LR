@@ -13,22 +13,6 @@
     <link rel="icon" type="image/png" href="images/L.svg">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const myForm = document.getElementById("myForm");
-            const successMessage = document.getElementById("successMessage");
-
-            myForm.addEventListener("submit", function (event) {
-                event.preventDefault(); // Evita el envío predeterminado del formulario
-
-                // Oculta el formulario
-                myForm.style.display = "none";
-
-                // Muestra el mensaje de éxito
-                successMessage.style.display = "block";
-            });
-        });
-    </script>
 </head>
 
 <body>
@@ -314,29 +298,16 @@
 
                 <div class="portfolio portfolio-third">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-third.jpg" alt="creación-de-marca">
+                        <img src="images/chatbot.png" alt="creación-de-marca">
                     </div>
                     <div class="portfolio-text">
-                        <h2>Diseño Gráfico</h2>
-                        <p>En el universo del diseño gráfico, entendemos el poder de una imagen. Contamos con las herramientas necesarias 
-                            para dar vida a tus ideas mediante diseños frescos y llamativos. Desde la creación de marcas hasta la promoción, 
-                            estamos aquí para optimizar tu presencia en línea y dejar una impresión duradera en tu audiencia.</p>
+                        <h2>Proyecto Chatbot con Python</h2>
+                        <p>Este código implementa un chatbot desarrollado en Python que actúa como un asistente personal con reconocimiento de voz. La aplicación utiliza diversas tecnologías y bibliotecas para proporcionar una experiencia de usuario interactiva y funcionalidades útiles.</p>
                         <div class="button"><a
-                                href="#"><!--<button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button>--></a>
+                                href="https://github.com/LUCIANO131231/Chatbot"><button><span class="index">Ver<i class="gg-arrow-right"></i></span></button></a>
                         </div>
                     </div>
                 </div>
-                <!--<div class="portfolio portfolio-fourth">
-                    <div class=" portfolio-image">
-                        <img src="images/portfolio-fourth.jpg" alt="portfolio-fourth">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Wow Graphics</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
-                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>-->
             </div>
             <!--copyright-section You Can Remove After Downloading-->
             <div class="footer">
@@ -389,7 +360,7 @@
                     <div class="form-header">
                         Escríbeme
                     </div>
-                    <form id="myForm" name="contact" method="POST" data-netlify="true">
+                    <form name="contact" method="POST" onsubmit="enviarFormulario(); return false;">
                         <div class="input-line">
                             <input type="text" placeholder="Nombre" name="name" class="input-name" required>
                             <input type="email" placeholder="Email" name="email" class="input-name" required>
@@ -397,8 +368,7 @@
                         <textarea placeholder="Mensaje" name="message" class="input-textarea" required></textarea>
                         <button type="submit">Enviar</button>
                     </form>
-                    <p id="successMessage" class="success-message">Se ha enviado correctamente.</p>
-                </div>                
+                </div>                 
                 <!--Contact information-->
                 <div class="contact-info">
                     <div class="contact-info-header">
@@ -456,6 +426,14 @@
     <!--particles script-->
     <script>
         particlesJS("particles", { "particles": { "number": { "value": 40, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+    </script>
+    <script>
+        function enviarFormulario() {
+            // Después de enviar exitosamente el formulario, muestra el mensaje de éxito.
+            alert('Se ha enviado correctamente');
+            // Limpia los valores de los campos del formulario
+            document.forms["contact"].reset();
+        }
     </script>
 </body>
 </html>
