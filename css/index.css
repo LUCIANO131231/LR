@@ -91,7 +91,7 @@ body{
     width: 100%;
     position:fixed;
     z-index: 5;
-    background-color:#7F8181;
+    background-color:#2A3132;
     transform: translateY(-200%);
     display: flex;
     flex-direction: column;
@@ -131,11 +131,11 @@ body{
     content: "";
     position: absolute;
     height: 100%;
-    width: 50%;
+    width: 100%;
     top:0;
     right:0;
     background-color:whitesmoke;
-    transition: all .5s ease;
+    transition: all .3s ease;
 
 }
 .menubar .second-span{
@@ -145,7 +145,7 @@ body{
     content: "";
     position: absolute;
     height: 100%;
-    width: 75%;
+    width: 70%;
     top:0;
     right:0;
     background-color:whitesmoke;
@@ -173,7 +173,7 @@ body{
 .close-first , .close-second{
  height: 2px;
  width: 35px;
- background-color: whitesmoke;
+ background-color: rgb(255, 255, 255);
  display: block;
  margin: 4px;
  cursor: pointer;
@@ -210,7 +210,7 @@ body{
 }
 .logo img:hover{
     opacity: 1;
-    transform: rotate(-45deg);
+    transform: rotate(-90deg);
 }
 #navigation-bar img{
     height: 80px;
@@ -226,12 +226,12 @@ body{
     transform:rotate(-45deg);
 }
 .header-image img{
-    height: 100vh;
-    float: right;
+    height: 60vh;
+    float:inline-end;
 }
 .header-image{
     float: right;
-    margin-top: 70px;
+    margin-top: 280px;
     margin-right: 30px;
     height: auto;
     background-size: cover;
@@ -241,7 +241,7 @@ body{
 
 }
 .header-content{
-    height: 100vh;
+    height: 65vh;
     width: 100%;
     float: left;
     display: flex;
@@ -271,12 +271,32 @@ body{
     font-size: 65px;
 }
 
+.tamañoletra {
+    /* Tus estilos existentes */
+    display: flex;
+    margin-top: -12px;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado horizontalmente dentro de .tamañoletra */
+}
+
+.header-content .tamañoletra{
+    z-index: 2;
+    font-weight:300;
+    font-family: poppins;
+    font-size: 20px;
+}
+
 .header-content .subfirstline{
     z-index: 2;
     font-weight:700;
     font-family: poppins;
-    font-size: 65px;
+    font-size: 60px;
 }
+
+.header-content .tamañoletra .color{
+    color: #ffffff;
+ }
 
 .header-content .subfirstline .color{
     color: #ffffff;
@@ -288,14 +308,13 @@ body{
 
 .header-content .secondline{
     z-index: 1;
-    font-size: 30px;
+    font-size: 45px;
     padding-top:20px ;
-    font-weight:500;
+    font-weight:700;
     font-family: poppins;
     color: #ffffff;
 }
 .header-content .secondline .txt-rotate{
-    
     color: #34495E;
 }
 .slash{
@@ -356,7 +375,7 @@ body{
 .navigation-links a{
     padding:10px;
     text-decoration: none;
-    color: white;
+    color: #FDFEFE;
     font-size: 30px;
     opacity: .7;
     transition: all .4s ease;
@@ -376,7 +395,7 @@ body{
     font-size: 5em;
     font-weight: 400;
     font-family: monoton;
-    color:#34495E;
+    color:#7DCEA0;
     z-index: 1;
     pointer-events: none;
     opacity: 0;
@@ -430,13 +449,13 @@ body{
 }
 #breaker{
     height: 100vh;
-    width: 200%;
-    background-color: #2A3132;
+    width: 150%;
+    background-color: #34495E;
     opacity: 1;
     animation: breakeranimate 2s linear;
     display: none;
-    transition: all .4s ease;
-    border-radius: 5px;
+    transition: all 0.2s ease;
+    border-radius: 0px;
     z-index: 10;
     position: fixed;
 }
@@ -536,6 +555,23 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     flex-direction: row;
+}
+
+.about-imga {
+    text-align: center; /* Centra la imagen horizontalmente */
+    margin-bottom: 20px; /* Espaciado inferior, ajusta según sea necesario */  
+}
+
+.about-imga img {
+    width: 120px; /* Ajusta el ancho según tus necesidades */
+    height: 140px; /* Ajusta el alto según tus necesidades */
+    border-radius: 25px; /* Radio del borde para hacerlo circular */
+    margin-top: 80px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.about-imga img:hover {
+    transform: scale(1.1); /* Escala la imagen al hacer hover */
 }
 .about-img img{
     width: 100%;
@@ -674,6 +710,11 @@ body{
     width: 100%;
     height:auto;
 }
+#skills1{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
 .skills-header{
     height: auto;
     width: 100%;
@@ -694,6 +735,14 @@ body{
     margin-top: 20px;
     margin-bottom: 80px;
 }
+
+.skills1-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribuye las habilidades equitativamente */
+    margin: 0 auto; /* Centra el bloque de habilidades horizontalmente */
+    max-width: 800px;
+}
 .skill-html{
     height: auto;
     width: 45%;
@@ -705,6 +754,20 @@ body{
     display: inline-block;
     padding:1.5%;
 }
+
+.skill-html1{
+    width: 30%; /* Ocupa el 30% del ancho disponible */
+    margin: 10px;
+    padding: 15px;
+    background-color: #34495E;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: poppins;
+    text-align: center;
+}
+
 .skill-text{
     width:80%;
     position: relative;
@@ -733,7 +796,7 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:85%;
+    width:75%;
     border-radius: 10px;
     background: #34495E;
 }
@@ -747,7 +810,7 @@ body{
     font-family: poppins;
     justify-content: center;
     transition: all .4s ease;
-    width:65%;
+    width:85%;
     border-radius: 10px;
     background: #34495E;
 }
@@ -846,11 +909,11 @@ padding-bottom: 40px;
     width: 40%;
     padding-left: 1%;
     margin: 1%;
-    margin-left: -40px;
+    margin-left: -20px;
     margin-top: 160px;
     z-index: 3;
     opacity: 1;
-    background: #080808;
+    background: #2C3E50;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -860,7 +923,7 @@ padding-bottom: 40px;
     font-family: poppins;
     font-weight: 200;
     padding: 20px;
-    color: #34495E;
+    color: #ffffff;
     transition: all .4s ease;
 }
 .portfolio-text p{
@@ -881,7 +944,7 @@ padding-bottom: 40px;
     transition: all .4s ease;
     outline: none;
     margin: 20px;
-    border: 1.5px solid #34495E;
+    border: 1.5px solid #7F8C8D;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -896,7 +959,7 @@ padding-bottom: 40px;
     top: 0;
     left: 0;
     z-index: 3;
-    background: #34495E;
+    background: #7F8C8D;
     transition: all .7s ease;
 }
 .portfolio-text button:hover{
@@ -1168,7 +1231,7 @@ form{
     margin:14px;
     border-radius: 8px;
     outline: none;
-    background: #2A3132;
+    background: #2C3E50;
     border:none;
     color: whitesmoke;
     font-family: poppins;
@@ -1200,7 +1263,7 @@ form{
     height: 150px;
     border-radius: 8px;
     outline: none;
-    background: #2A3132;
+    background: #2C3E50;
     border:none;
     color: whitesmoke;
     font-family: poppins;
@@ -1441,7 +1504,7 @@ For devices with smaller width like mobile phone
         display: none;
     }
     #breaker{
-        height: 50vh;
+        height: 100vh;
         width: 200%;
         background-color: #2A3132;
         opacity: 1;
@@ -1754,7 +1817,7 @@ For devices with smaller width like mobile phone
                 margin:14px;
                 border-radius: 8px;
                 outline: none;
-                background: #2A3132;
+                background: #2C3E50;
                 border:none;
                 color: whitesmoke;
                 font-family: poppins;
@@ -1787,7 +1850,7 @@ For devices with smaller width like mobile phone
                 height: 140px;
                 border-radius: 8px;
                 outline: none;
-                background: #2A3132;
+                background: #2C3E50;
                 border:none;
                 color: whitesmoke;
                 font-family: poppins;
@@ -1896,7 +1959,7 @@ for tabs and large phones
         display: none;
     }
     #breaker{
-        height: 50vh;
+        height: 100vh;
         width: 200%;
         background-color: #2A3132;
         opacity: 1;
@@ -2212,7 +2275,7 @@ for tabs and large phones
                 margin:14px;
                 border-radius: 8px;
                 outline: none;
-                background: #2A3132;
+                background: #2C3E50;
                 border:none;
                 color: whitesmoke;
                 font-family: poppins;
@@ -2245,7 +2308,7 @@ for tabs and large phones
                 height: 140px;
                 border-radius: 8px;
                 outline: none;
-                background: #2A3132;
+                background: #2C3E50;
                 border:none;
                 color: whitesmoke;
                 font-family: poppins;
@@ -2476,10 +2539,10 @@ for tabs and large phones
     }
     .contact-info{
         width: 40%;
-        height: 600px;
+        height: 550px;
         background-position: center;
         background-size: cover;
-        border-radius: 16px;
+        border-radius: 85px;
         margin-bottom: 50px;
         position: relative;
         overflow: hidden;
@@ -2491,7 +2554,7 @@ for tabs and large phones
         position: absolute;
         top: 0;
         left: 0;
-        background: #101010;
+        background: #2C3E50;
         opacity: .7;
         pointer-events: none;
     }
@@ -2523,7 +2586,7 @@ for tabs and large phones
         margin:14px;
         border-radius: 8px;
         outline: none;
-        background: #2A3132;
+        background: #2C3E50;
         border:none;
         color: whitesmoke;
         font-family: poppins;
@@ -2556,7 +2619,7 @@ for tabs and large phones
         height: 150px;
         border-radius: 8px;
         outline: none;
-        background: #2A3132;
+        background: #2C3E50;
         border:none;
         color: whitesmoke;
         font-family: poppins;
