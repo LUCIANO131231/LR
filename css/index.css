@@ -274,15 +274,15 @@ body{
 .tamañoletra {
     /* Tus estilos existentes */
     display: flex;
-    margin-top: -12px;
+    margin-top: 3px;
     align-items: center; /* Centra verticalmente */
     justify-content: center; /* Centra horizontalmente */
     text-align: center; /* Asegura que el texto esté centrado horizontalmente dentro de .tamañoletra */
 }
 
-.header-content .tamañoletra{
+.social-media-links .tamañoletra{
     z-index: 2;
-    font-weight:300;
+    font-weight:700;
     font-family: poppins;
     font-size: 20px;
 }
@@ -294,7 +294,7 @@ body{
     font-size: 60px;
 }
 
-.header-content .tamañoletra .color{
+.social-media-links .tamañoletra .color{
     color: #ffffff;
  }
 
@@ -450,7 +450,7 @@ body{
 #breaker{
     height: 100vh;
     width: 150%;
-    background-color: #34495E;
+    background-color: #696969;
     opacity: 1;
     animation: breakeranimate 2s linear;
     display: none;
@@ -559,14 +559,14 @@ body{
 
 .about-imga {
     text-align: center; /* Centra la imagen horizontalmente */
-    margin-bottom: 20px; /* Espaciado inferior, ajusta según sea necesario */  
+    margin-bottom: 10px; /* Espaciado inferior, ajusta según sea necesario */  
 }
 
 .about-imga img {
-    width: 120px; /* Ajusta el ancho según tus necesidades */
-    height: 140px; /* Ajusta el alto según tus necesidades */
-    border-radius: 25px; /* Radio del borde para hacerlo circular */
-    margin-top: 80px;
+    width: 140px; /* Ajusta el ancho según tus necesidades */
+    height: 180px; /* Ajusta el alto según tus necesidades */
+    border-radius: 180%! important; /* Radio del borde para hacerlo circular */
+    margin-top: -40px;
     transition: transform 0.4s ease-in-out;
 }
 
